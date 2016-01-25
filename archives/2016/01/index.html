@@ -10,6 +10,11 @@
 <meta http-equiv=”Cache-Control” content=”no-siteapp” />
 
 
+  <meta name="keywords" content="Karma " />
+
+
+
+    <meta name="description" content=", keep hungry , keep foolish" />
 
 
 
@@ -26,6 +31,7 @@
 
 
 
+<meta name="wumiiVerification" content="true#使用无觅时候，需要验证站点的所属权，这个就是验证码，在文章的 header 中生成" />
 
 
 
@@ -36,12 +42,14 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="Karma's Blog" type="application/atom+xml" />
+
 
 
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.2" />
 
 
-  <title> 歸檔 / Hexo </title>
+  <title> Archive / Karma's Blog </title>
 </head>
 
 <body>
@@ -93,30 +101,21 @@
       <span class="logo">
         <i class="icon-logo"></i>
       </span>
-      <span class="site-title">Hexo</span>
+      <span class="site-title">Karma's Blog</span>
   </a>
   <span class="logo-line-after"><i></i></span>
 </h1>
 
 
   <ul id="menu" class="menu">
-    <div class="c-search-form-div" style="display:none;">
-      
-      
-    </div>
-    <script type="text/javascript">
-      if(isDesktop() || isTablet()){        
-        $('.c-search-form-div').css("display","inline");
-      }    
-    </script>
 
     
       
       
-        <li class="menu-item menu-item-about">
-        <a href="/about">
-          <i class="menu-item-icon icon-about"></i> <br />
-          關於
+        <li class="menu-item menu-item-home">
+        <a href="/home">
+          <i class="menu-item-icon icon-home"></i> <br />
+          Home
         </a>
       </li>
       
@@ -126,17 +125,7 @@
         <li class="menu-item menu-item-tags">
         <a href="/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
-          標籤
-        </a>
-      </li>
-      
-    
-      
-      
-        <li class="menu-item menu-item-categories">
-        <a href="/categories">
-          <i class="menu-item-icon icon-categories"></i> <br />
-          分類
+          Tags
         </a>
       </li>
       
@@ -146,17 +135,17 @@
         <li class="menu-item menu-item-archives">
         <a href="/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
-          歸檔
+          Archives
         </a>
       </li>
       
     
       
       
-        <li class="menu-item menu-item-commonweal" style="display:none;">
-        <a href="/404.html">
-          <i class="menu-item-icon icon-commonweal"></i> <br />
-          公益404
+        <li class="menu-item menu-item-about">
+        <a href="/about">
+          <i class="menu-item-icon icon-about"></i> <br />
+          About
         </a>
       </li>
       
@@ -166,6 +155,28 @@
       if(!isMobile()){
          $('.menu-item-commonweal').css("display","");
       }
+    </script>
+      <div class="c-search-form-div" style="display:none;">
+      
+      <form class="menu-item" >
+        <input type="text" id="ts-search-input" class="menu-search-input st-default-search-input"  />
+      </form>
+      
+        <script type="text/javascript">
+         (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+         })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','true# your swiftype_key 如果没有填，则不启动该搜索','2.0.0');
+        </script>  
+      
+      
+    </div>
+    <script type="text/javascript">
+      if(isDesktop() || isTablet()){        
+        $('.c-search-form-div').css("display","inline");
+      }    
     </script>
 
   </ul>
@@ -187,7 +198,7 @@
       
        
       
-      嗯..! 目前共計 1 篇文章。 繼續努力。
+      Um..! 1 post. Keep on posting.
     </span>
 
     
@@ -258,41 +269,73 @@
 
       <div class="site-overview">
         <div class="site-author motion-element">
-          <img class="site-author-image" src="/xirong.jpg" alt="John Doe" />
-          <p class="site-author-name">John Doe</p>
+          <img class="site-author-image" src="/xirong.jpg" alt="Start From Karma" />
+          <p class="site-author-name">Start From Karma</p>
         </div>
-        <p class="site-description motion-element"></p>
+        <p class="site-description motion-element">keep hungry , keep foolish</p>
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">1</span>
-              <span class="site-state-item-name">文章</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/categories">
+            
               <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">分類</span>
-              </a>
+              <span class="site-state-item-name">categories</span>
+              
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
               <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">標籤</span>
+              <span class="site-state-item-name">tags</span>
               </a>
           </div>
         </div>
 
         
+          <div class="feed-link motion-element">
+            <a href="/atom.xml">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
 
+        
+          <div class="links-of-author motion-element">
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/u/2368079180?is_all=1" target="_blank">微博</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/KarmaChen" target="_blank">GitHub</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://www.zhihu.com/people/karmachen" target="_blank">知乎</a>
+            </span>
+                      
+           </div>
         
 
         
         
 
      
+        
+          <div class="links-of-author motion-element">        
+          <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.ixirong.com" target="_blank">xirong</a>
+              </span>
+            
+          </div>
         
         
       </div>
@@ -312,21 +355,16 @@
   &copy; &nbsp; 
   2016
   
-  <span class="author"> John Doe</span>
+  <span class="author"> Start From Karma</span>
 </div>
 
+
 <div class="powered-by">
-  <div style="float:left;margin-top:7px;margin-right:10px;">
-  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254711542'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254711542%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-  </div>
-   鲁ICP备15013969号
-</div>
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a> 強力驅動
+  Powered by <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主題 
+  Theme 
   <a class="theme-link" href="https://github.com/xirong/hexo-theme-next" rel="external nofollow">
     NexT
   </a>
