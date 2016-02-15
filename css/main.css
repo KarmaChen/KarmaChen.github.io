@@ -1156,7 +1156,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1171b6;
+  background: #c1ff65;
 }
 .sidebar-nav {
   margin: 0;
@@ -1332,7 +1332,7 @@ input.menu-search-input {
   }
 }
 .posts-expand .post-title {
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -1369,7 +1369,7 @@ input.menu-search-input {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
@@ -1493,7 +1493,7 @@ input.menu-search-input {
   margin: 60px 0;
 }
 .posts-collapse .collection-title h2 {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .posts-collapse .collection-title small {
   color: #bbb;
@@ -1554,7 +1554,7 @@ input.menu-search-input {
 }
 .posts-collapse .post-title {
   margin-left: 60px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
   font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   line-height: inherit;
