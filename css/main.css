@@ -1156,7 +1156,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c33367;
+  background: #53ff0b;
 }
 .sidebar-nav {
   margin: 0;
@@ -1369,7 +1369,7 @@ input.menu-search-input {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-size: 16.5px;
+  font-size: 14px;
   text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
