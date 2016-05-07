@@ -14,7 +14,7 @@
 
 
 
-    <meta name="description" content="摇滚诗人, keep hungry , keep foolish" />
+    <meta name="description" content="学习笔记, keep hungry , keep foolish" />
 
 
 
@@ -50,7 +50,7 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.2" />
 
 
-  <title> 摇滚诗人 - Karma's Blog 
+  <title> 学习笔记 - Karma's Blog 
 </title>
 </head>
 
@@ -182,7 +182,7 @@
           
           
             
-              摇滚诗人
+              学习笔记
             
           
         </h1>
@@ -192,7 +192,7 @@
 
         <span class="post-time">
         <i class="Hui-iconfont">&#xe690;</i>
-          Posted on 2016-02-22 |
+          Posted on 2016-04-08 |
         </span>
          <span id="busuanzi_container_page_pv"><i class="Hui-iconfont">&#xe6c3;</i>     热度 <span id="busuanzi_value_page_pv"></span> </span>
 
@@ -211,7 +211,7 @@ var duoshuoQuery = {short_name:"karma"};
           <span class="post-category">
             &nbsp; | &nbsp;<i class="Hui-iconfont">&#xe695;</i> In
             
-              <a href="/categories/生活/">生活</a>
+              <a href="/categories/objective-c/">objective-c</a>
 
               
               
@@ -219,7 +219,7 @@ var duoshuoQuery = {short_name:"karma"};
               
 
             
-              <a href="/categories/生活/随笔/">随笔</a>
+              <a href="/categories/objective-c/IOS/">IOS</a>
 
               
               
@@ -232,8 +232,8 @@ var duoshuoQuery = {short_name:"karma"};
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;<i class="Hui-iconfont">&#xe622;</i>
-            <a href="/2016/02/22/摇滚诗人/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/22/摇滚诗人/"></span>
+            <a href="/2016/04/09/学习笔记/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/09/学习笔记/"></span>
             </a>
           </span>
           
@@ -247,7 +247,22 @@ var duoshuoQuery = {short_name:"karma"};
       
 
       
-        <h1 id="u9762_u5BF9"><a href="#u9762_u5BF9" class="headerlink" title="面对"></a>面对</h1><p>  诗人抓着悬崖边缘：<br><br>  大侠要去劫富济贫，无暇顾及。<br><br>  富翁自私自利，但也无奈好善乐施。<br><br>  妇人哗众取宠，长舌撩人。</p>
+        <h2 id="u62FE_u788E"><a href="#u62FE_u788E" class="headerlink" title="拾碎"></a>拾碎</h2><h3 id="1-initWithFrame"><a href="#1-initWithFrame" class="headerlink" title="1.initWithFrame"></a>1.initWithFrame</h3><hr>
+<p>initWithFrame方法用来初始化并返回一个新的视图对象,根据指定的CGRect（尺寸）。<br>特别注意，如果在子类中重载initWithFrame方法，必须先调用父类的initWithFrame方法。在对自定义的UIView子类进行初始化操作。<br>例子:<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">id</span>)initWithFrame:(<span class="built_in">CGRect</span>)frame&#123;</span><br><span class="line">    <span class="keyword">self</span> = [<span class="keyword">super</span> initWithFrame:frame];<span class="comment">// 先调用父类的initWithFrame方法</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">self</span>) </span><br><span class="line">    &#123;</span><br><span class="line">         <span class="comment">// 再自定义该类（UIView子类）的初始化操作。</span></span><br><span class="line">        _xView = [[<span class="built_in">UIScrollView</span> alloc] initWithFrame:<span class="keyword">self</span><span class="variable">.bounds</span>];</span><br><span class="line">        [_xView setFrame:<span class="built_in">CGRectMake</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">320</span>, <span class="number">480</span>)];</span><br><span class="line">        [<span class="keyword">self</span> addSubview:_xView];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h3 id="2-_23pragma_mark"><a href="#2-_23pragma_mark" class="headerlink" title="2.#pragma mark"></a>2.#pragma mark</h3><hr>
+<p>pragma 声明主要由 Xcode 用来完成两个主要任务：整理代码和防止编译器警告。<br>在你的 @implementation 中使用 #pragma mark 来将代码分割成逻辑区块。这些逻辑区块不仅仅使得阅读代码本身容易许多，也为Xcode源导航增加了视觉线索（#pragma mark 声明前有一个水平分割并由破折号（－）开始）。<br>如图:<img src="/学习笔记/pragma.png" alt="pragma"></p>
+<h3 id="3-accessory"><a href="#3-accessory" class="headerlink" title="3.accessory"></a>3.accessory</h3><hr>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cell<span class="variable">.accessoryType</span> = <span class="built_in">UITableViewCellAccessoryNone</span>;</span><br><span class="line">cell<span class="variable">.accessoryType</span> = <span class="built_in">UITableViewCellAccessoryDisclosureIndicator</span>;<span class="comment">//小箭头</span></span><br><span class="line">cell<span class="variable">.accessoryType</span> = <span class="built_in">UITableViewCellAccessoryDetailButton</span>;<span class="comment">//圆形+箭头</span></span><br><span class="line">cell<span class="variable">.accessoryType</span> = <span class="built_in">UITableViewCellAccessoryDetailDisclosureButton</span>;<span class="comment">//圆形+箭头</span></span><br><span class="line">cell<span class="variable">.accessoryType</span> = <span class="built_in">UITableViewCellAccessoryCheckmark</span>;<span class="comment">//打钩</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-static"><a href="#4-static" class="headerlink" title="4.static"></a>4.static</h3><hr>
+<p>static 修饰局部变量：延长布局变量的生命周期<br>static 修饰全局变量：当前变量只能在当前文件中使用(注意Static型全局变量的可见性，局限于当前.m文件其他的文件中的类，无法访问到该变量)<br>static 修饰函数：函数只能在当前文件中使用<br>static 可以使局部变量保留多次调用一个方法所得的值.<br>例如<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-(<span class="keyword">int</span>)&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> pageCount =<span class="number">0</span>;</span><br><span class="line">	++pageCount;</span><br><span class="line">	<span class="keyword">return</span> page	Count;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>静态:pageCount能记录调用showPage方法的所有对象答应页面的数目;<br>实例变量:pageCount能记录调用showPage方法的每个对象答应页面的数目;因为每个对象都有自己的pageCount的副本;</p>
+<h3 id="5-NSBundle"><a href="#5-NSBundle" class="headerlink" title="5.NSBundle"></a>5.NSBundle</h3><hr>
+<p>bundle是一个目录,其中包含了程序会使用到的资源.这些资源包含了如图像,声音,编译好的代码,nib文件(用户也会把bundle称为plug-in).对应bundle,cocoa提供了类NSBundle.<br>例如:<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">  cell =[[[<span class="built_in">NSBundle</span> mainBundle]loadNibNamed:<span class="string">@"TableViewCell"</span></span><br><span class="line"><span class="built_in">NSString</span> *earth = [[<span class="built_in">NSBundle</span> mainBundle] pathForResource:<span class="string">@"Brad Cox"</span> 	ofType:<span class="string">@"png"</span>];</span><br></pre></td></tr></table></figure></p>
+<h3 id="6-@property__28nonatomic_2Ccopy_29_NSString_*title_3B"><a href="#6-@property__28nonatomic_2Ccopy_29_NSString_*title_3B" class="headerlink" title="6.@property (nonatomic,copy) NSString *title;"></a>6.@property (nonatomic,copy) NSString *title;</h3><hr>
+<p>相当于:<br>@property:@prperty只不过是给编译器看的一种指令，它可以编译之后为你生成相应的getter和setter方法。<br>atomic:设置成员变量的@property属性时，默认为atomic，提供多线程安全。<br>nonatomic:禁止多线程，变量保护，提高性能。</p>
+<h3 id="7-emun"><a href="#7-emun" class="headerlink" title="7.emun"></a>7.emun</h3><hr>
+<h3 id="8-stringWithFormat"><a href="#8-stringWithFormat" class="headerlink" title="8.stringWithFormat"></a>8.stringWithFormat</h3><hr>
 
       
     </div>
@@ -265,11 +280,11 @@ var duoshuoQuery = {short_name:"karma"};
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/09/学习笔记/">学习笔记</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/22/摇滚诗人/">摇滚诗人</a>
             
           </div>
         </div>
@@ -287,7 +302,7 @@ var duoshuoQuery = {short_name:"karma"};
       <div class="comments" id="comments">
         
 
-<div class="ds-share" data-thread-key="2016/02/22/摇滚诗人/" data-title="摇滚诗人" data-images="http://www.ck1388.com/2016/02/22/摇滚诗人/" data-content="一篇不错的文章，推荐给大家！" data-url="http://www.ck1388.com/2016/02/22/摇滚诗人/">
+<div class="ds-share" data-thread-key="2016/04/09/学习笔记/" data-title="学习笔记" data-images="http://www.ck1388.com/2016/04/09/学习笔记/" data-content="一篇不错的文章，推荐给大家！" data-url="http://www.ck1388.com/2016/04/09/学习笔记/">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">        
         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
@@ -302,8 +317,8 @@ var duoshuoQuery = {short_name:"karma"};
  </div>
 
           <!-- 评论框 -->
-          <div class="ds-thread" data-thread-key="2016/02/22/摇滚诗人/"
-               data-title="摇滚诗人" data-url="http://www.ck1388.com/2016/02/22/摇滚诗人/">
+          <div class="ds-thread" data-thread-key="2016/04/09/学习笔记/"
+               data-title="学习笔记" data-url="http://www.ck1388.com/2016/04/09/学习笔记/">
           </div>
         
       </div>
@@ -426,7 +441,7 @@ var duoshuoQuery = {short_name:"karma"};
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u9762_u5BF9"><span class="nav-number">1.</span> <span class="nav-text">面对</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u62FE_u788E"><span class="nav-number">1.</span> <span class="nav-text">拾碎</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-initWithFrame"><span class="nav-number">1.1.</span> <span class="nav-text">1.initWithFrame</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-_23pragma_mark"><span class="nav-number">1.2.</span> <span class="nav-text">2.#pragma mark</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-accessory"><span class="nav-number">1.3.</span> <span class="nav-text">3.accessory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-static"><span class="nav-number">1.4.</span> <span class="nav-text">4.static</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-NSBundle"><span class="nav-number">1.5.</span> <span class="nav-text">5.NSBundle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-@property__28nonatomic_2Ccopy_29_NSString_*title_3B"><span class="nav-number">1.6.</span> <span class="nav-text">6.@property (nonatomic,copy) NSString *title;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-emun"><span class="nav-number">1.7.</span> <span class="nav-text">7.emun</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-stringWithFormat"><span class="nav-number">1.8.</span> <span class="nav-text">8.stringWithFormat</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
